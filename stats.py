@@ -1,7 +1,7 @@
 def get_book_text (path):
     with open(path) as f:
         return f.read()
-def main():
+def number_of_words():
     book_text = get_book_text("books/frankenstein.txt")
     book_text = book_text.split()
     num_words = 0
@@ -19,6 +19,5 @@ def count ():
         else:
             letter_count[letter] = 1
     print (letter_count) 
-
-main() 
+number_of_words()
 count()
